@@ -212,4 +212,15 @@ footer {
     header > ul.nav-menu-right {
         margin-left: 20px;
     }
+
+    main > .about-me {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main > .about-me > article div {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
 }
