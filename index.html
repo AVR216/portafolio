@@ -182,11 +182,11 @@
                 <p><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/jhon-villalba-3935b4218" target="_blank">jhon-villalba-3935b4218</a></p>
             </article>
             <article class="form-container">
-                <form action="POST">
+                <form id="contactForm">
 
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required minlength="3">
                     </div>
 
                     <div>
@@ -196,12 +196,12 @@
                     
                     <div>
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" required minlength="10">
                     </div>
 
                     <div>
                         <label>Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea></textarea>
+                        <textarea id="message" name="message" rows="5" required minlength="50"></textarea></textarea>
                     </div>
 
                     <input type="submit" value="Contact me">
@@ -210,6 +210,13 @@
         </footer>
 
     </div>
+   <!--emailjs CDN--> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- .js file -->
     <script src="./js/index.js"></script>
