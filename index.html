@@ -13,11 +13,13 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
 
     <!-- Font awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -77,24 +79,24 @@
         <span id="about_me"></span>
         <main>
             <!--About me-->
-            <section class="about-me">
+            <section class="about-me animate__animated animate__backInDown animate__slow">
                 <article>
                     
                     <div>
-                        <h1>Jhon Anderson Villalba Rubio</h1>
+                        <h1 class="animate-title">Jhon Anderson Villalba Rubio</h1>
 
-                        <span>Computer and systems engineer | Software Developer</span>
+                        <span><strong>Computer and systems engineer | Software Developer</strong></span>
                     </div>
                     
                     <p>Ingeniero de sistemas y computación con interés en el desarrollo de software y todo lo que esto conlleva. Con capacidad de resolución de problemas, facilidad para trabajar en equipo y con muchos deseos de aportar y de aprender, ya que el área de la tecnología está constantemente en evolución. <span><br></span> Mi experiencia se basa en el desarrollo de proyectos universitarios, laborales y personales, así como también de diferentes cursos externos relacionados con el desarrollo de software. Teniendo en cuenta como aspectos importantes para el desarrollo de dichos proyectos, el ciclo de vida del software, patrones de diseño y arquitectura, además del uso de metodologías ágiles.</p>
 
                 </article>
-                <img src="./assets//pictures/foto_perfil_1.jpg" alt="Not found">
+                <img  id="photo" src="./assets//pictures/foto_perfil_1.jpg" alt="Not found">
             </section>
             
             <!--Work experience-->
             <section class="work-experience" id="work_experience">
-                <h2>Work experience</h2>
+                <h2 class="animate-title">Work experience</h2>
                 <article class="content">
                     <article>
                         <h3>University Intern</h3>
@@ -112,91 +114,91 @@
             </section>
 
             <!--Skills-->
-            <section class="skills" id="skills">
-                <h2>Skills</h2>
+            <section class="skills animate__animated animate__backInLeft" id="skills">
+                <h2 class="animate-title">Skills</h2>
                 <article>
-                    <div>
+                    <div class="animate">
                         <h3>Java <i class="fa-brands fa-java"></i></h3>
                         <span>Level: medio</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae illo, obcaecati inventore nobis, tenetur totam accusantium numquam cumque hic incidunt maxime et quo esse quis nostrum doloremque accusamus? Sit.</p>
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <h3>Angular <i class="fa-brands fa-angular"></i></h3>
                         <span>Level: medio</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae illo, obcaecati inventore nobis, tenetur totam accusantium numquam cumque hic incidunt maxime et quo esse quis nostrum doloremque accusamus? Sit.</p>
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <h3>HTML, CSS and JS <i class="fab fa-html5"></i> </i><i class="fab fa-css3"></i> <i class="fab fa-js"></i></h3>
                         <span>Level: medio</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae illo, obcaecati inventore nobis, tenetur totam accusantium numquam cumque hic incidunt maxime et quo esse quis nostrum doloremque accusamus? Sit.</p>
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <h3>MySQL, MariaDB and PostgreSQL <i class="fas fa-database"></i></h3>
                         <span>Level: medio</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae illo, obcaecati inventore nobis, tenetur totam accusantium numquam cumque hic incidunt maxime et quo esse quis nostrum doloremque accusamus? Sit.</p>
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <h3>Git, nodejs, C# and MongoDB <i class="fab fa-node"></i></h3>
                         <span>Level: basic</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae illo, obcaecati inventore nobis, tenetur totam accusantium numquam cumque hic incidunt maxime et quo esse quis nostrum doloremque accusamus? Sit.</p>
-                    </div>
+                    </div> 
                     
                 </article>    
             </section>
 
             <!--Projects-->
-            <section class="projects" id="projects">
-                <h2>Personal projects</h2>
+            <section class="projects animate__animated animate__backInRight" id="projects">
+                <h2 class="animate-title">Personal projects</h2>
                 <article>
                     <article>
                         <h3>Project MapasAngular</h3>
                         <p>Proyecto desarrollado usando el framework Angular y la librería de mapas Mapbox.</p>
-                        <a href="https://github.com/AVR216/MapasAngular" target="_blank">Go to project</a>
+                        <a class="btns" href="https://github.com/AVR216/MapasAngular" target="_blank">Go to project</a>
                     </article>
                     <article>
                         <h3>Project #?</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit facilis sed laborum minima cupiditate, maxime voluptates illum, dolorem voluptas ipsa ad, blanditiis similique. Voluptatum quia fugiat, illum corrupti vel delectus.</p>
-                        <a href="#">Go to project</a>
+                        <a href="#" class="btns">Go to project</a>
                     </article>
                 </article>    
             </section>
         </main>
 
-        <footer>
+        <footer class="animate__animated animate__backInUp">
             <!-- Contact me -->
-            <article class="contact-info">
-                <h3>Contact info</h3>
+            <article class="contact-info animate">
+                <h3>Contact Info</h3>
                 <hr>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i>
                     jhon.villalba.rubio@gmail.com</p>
                 <p><i class="fa-brands fa-github"></i> <a href="https://github.com/AVR216/" target="_blank">AVR216</a></p>
                 <p><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/jhon-villalba-3935b4218" target="_blank">jhon-villalba-3935b4218</a></p>
             </article>
-            <article class="form-container">
-                <form id="contactForm">
+            <article class="form-container animate">
+                <form id="contactForm" autocomplete="off">
 
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required minlength="3">
+                        <input type="text" id="name" name="name" required minlength="3" autocomplete="off">
                     </div>
 
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required autocomplete="off">
                     </div>
                     
                     <div>
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required minlength="10">
+                        <input type="text" id="subject" name="subject" required minlength="10" autocomplete="off">
                     </div>
 
                     <div>
@@ -204,7 +206,7 @@
                         <textarea id="message" name="message" rows="5" required minlength="50"></textarea></textarea>
                     </div>
 
-                    <input type="submit" value="Contact me">
+                    <input type="submit" value="Contact me" class="btns">
                 </form>
             </article>
         </footer>

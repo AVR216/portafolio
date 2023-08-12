@@ -6,8 +6,8 @@ btnNav.addEventListener('click', () => {
 
 /* Download button */
 const btnDownloadCV = document.querySelector('.download_cv');
+
 btnDownloadCV.addEventListener('click', () => {
-    console.log("Download cv");
     btnDownloadCV.setAttribute('href', './assets//files/cv.pdf');
 });
 
@@ -20,13 +20,13 @@ contactForm.addEventListener('submit', (event) => {
     const templateParams = {};
     let isError = false;
 
-    formData.forEach( (value, key) => {
-        if(value.trim().length == 0) {
+    formData.forEach((value, key) => {
+        if (value.trim().length == 0) {
             isError = true;
         }
     });
 
-    if(isError){
+    if (isError) {
         Swal.fire("This web says", "Please fill in the form fields", "error");
         return;
     }
@@ -41,7 +41,64 @@ contactForm.addEventListener('submit', (event) => {
             /* console.log('SUCCESS!', response.status, response.text); */
         }, function (error) {
             Swal.fire("This web says", "An error has occurred, please contact Jhon by another means", "warning");
-           /*  console.log('FAILED...', error); */
+            /*  console.log('FAILED...', error); */
         });
 });
 
+const labelsA = document.querySelectorAll('.btns');
+
+labelsA.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.classList.add('animate__animated', 'animate__bounce', 'animate__slow');
+    });
+
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__animated', 'animate__bounce', 'animate__slow');
+    });
+});
+
+const articles = document.querySelectorAll(".animate");
+
+articles.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.classList.add('animate__animated', 'animate__pulse');
+    });
+
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__animated', 'animate__pulse');
+    });
+});
+
+const titles = document.querySelectorAll(".animate-title");
+
+titles.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.classList.add('animate__animated', 'animate__bounceIn');
+    });
+
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__animated', 'animate__bounceIn');
+    });
+});
+
+const photo = document.getElementById("photo");
+
+photo.addEventListener('mouseenter', () => {
+    photo.classList.add('animate__animated', 'animate__flip', 'animate__slow');
+});
+
+photo.addEventListener('animationend', () => {
+    photo.classList.remove('animate__animated', 'animate__flip', 'animate__slow');
+});
+
+const icons = document.querySelectorAll("i");
+
+icons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+        icon.classList.add('animate__animated', 'animate__rotateIn');
+    });
+
+    icon.addEventListener('animationend', () => {
+        icon.classList.remove('animate__animated', 'animate__rotateIn');
+    });
+});

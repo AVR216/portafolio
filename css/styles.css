@@ -8,7 +8,7 @@ a {
 }
 
 body {
-    background: #ccc;
+    background-color: #fff;;
     color: #000;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +28,8 @@ body {
 }
 
 header {
-    background: #4a8;
+    background-color: #3CB371;
+    /* background: #4a8; */
     grid-area: header;
     display: flex;
     justify-content: space-between;
@@ -40,6 +41,7 @@ header {
     font-weight: bold;
     position: fixed;
     width: 99%;
+    z-index: 1000;
 }
 
 a {
@@ -98,6 +100,7 @@ header > ul > li > a:hover {
 }
 
 main {
+    background-color: #fff;
     grid-area: main;
     min-height: 80vh;
     display: grid;
@@ -116,7 +119,7 @@ main > .about-me {
     flex-direction: row;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #bbb;
+    background-color: #CCCCCC;
     gap: 10px;
     padding: 10px;
 }
@@ -156,8 +159,9 @@ main > .about-me img {
 
 main > .work-experience {
     grid-area: work-experience;
-    background-color: #ccc;
+    background-color: #fff;
     border-radius: 5px;
+    padding-bottom: 30px;
 }
 
 main > .work-experience > h2 {
@@ -183,7 +187,7 @@ main > .work-experience .content > article {
     gap: 20px;
     align-items: center;
     padding: 30px;
-    background-color: rgb(159, 195, 183);
+    background-color: #CCCCCC;
 }
 
 main > .work-experience .content > article p {
@@ -200,7 +204,10 @@ main > .skills > article {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #CCCCCC;
     gap: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
 main > .skills > article > div {
@@ -218,12 +225,13 @@ main > .skills > article > div {
 main > .skills >  h2 {
     text-align: center;
     padding: 20px;
-    background: #999;
+    background: #555555;
+    color: #fff;
     border-radius: 5px;
 }
 
 main .skills > article > div {
-    background-color: #bbb;
+    background-color: #fff;
     border-radius: 3px;
 }
 
@@ -240,7 +248,7 @@ main > .projects {
 main > .projects h2 {
     text-align: center;
     padding: 20px;
-    background-color: #4a8;
+    background-color: #3CB371 ;
     color: #fff;
     border-radius: 5px;
 }
@@ -252,6 +260,7 @@ main > .projects > article {
     gap: 20px;
     padding: 20px;
     background: linear-gradient(143deg, #000 0%, #fff 100%);
+    border-radius: 5px;
 }
 
 main > .projects > article > article {
@@ -271,18 +280,19 @@ main > .projects > article > article a {
     padding: 10px;
     margin-top: 20px;
     display: inline-block;
-    background-color: #4a8;
+    background-color: #3CB371;
     border-radius: 5px;
 }
 
 main > .projects > article > article a:hover {
     background-color: rgb(139, 204, 182);
+    text-decoration: underline;
     transition-duration: .3s;
 }
 
 footer {
     grid-area: footer;
-    background-color: #888;
+    background-color: #555555;
     padding: 20px;
     color: #fff;
     border-radius: 5px;
@@ -293,7 +303,7 @@ footer {
 }
 
 footer > .form-container {
-    background-color: #ccc;
+    background-color: #CCCCCC;
     color: #000;
     padding: 15px;
     border-radius: 5px;
@@ -321,25 +331,31 @@ footer .form-container > form > div > label {
 input[type="submit"] {
     padding: 10px;
     float: right;
-    background-color: #4a8;
+    background-color: #3CB371;
     border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(139, 204, 182);
+    background-color: rgb(53, 146, 115);
     transition-duration: .3s;
+    text-decoration: underline;
 }
 
 footer .form-container > form > div > textarea {
-    max-width: 60%;
-    min-width: 60%;
+    min-width: 63%;
+    max-width: 63%;
     max-height: 100px;
+    min-height: 100px;
     display:  inline-block;
+    margin-right: 0;
+    /* margin-left: 10px; */
 }
 
 footer .contact-info {
     color: #000;
-    background-color: #bbb;
+    background-color: #CCCCCC;;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -358,7 +374,7 @@ footer .contact-info > p > a {
     color: rgb(52, 121, 108);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     header > ul.nav-menu {
         display: block;
         position: absolute;
@@ -411,6 +427,11 @@ footer .contact-info > p > a {
         width: 100%;
         text-align: center;
         padding: 10px;
+    }
+
+    main > .about-me img {
+        width: 80%;
+        margin: auto;
     }
 
     main > .about-me > article:first-child {
