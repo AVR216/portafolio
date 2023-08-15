@@ -179,6 +179,10 @@ main > .work-experience .content {
 }
 
 
+main > .work-experience .content  ul {
+    list-style: disc;
+}
+
 main > .work-experience .content > article {
     border-radius: 5px;
     width: 40%;
