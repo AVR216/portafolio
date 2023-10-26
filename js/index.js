@@ -84,11 +84,11 @@ titles.forEach(element => {
 const photo = document.getElementById("photo");
 
 photo.addEventListener('mouseenter', () => {
-    photo.classList.add('animate__animated', 'animate__rotateIn', 'animate__slow');
+    photo.classList.add('animate__animated', 'animate__pulse', 'animate__faster');
 });
 
 photo.addEventListener('animationend', () => {
-    photo.classList.remove('animate__animated', 'animate__rotateIn', 'animate__slow');
+    photo.classList.remove('animate__animated', 'animate__pulse', 'animate__faster');
 });
 
 const icons = document.querySelectorAll("i");
