@@ -195,7 +195,7 @@ main > .work-experience .content > article {
     gap: 20px;
     align-items: center;
     padding: 30px;
-    background-color: #eed578;
+    background-color: #cbdad5;
     font-weight: 700;
     color: #0C1829;
     border-left: #34344e 5px solid;
@@ -215,7 +215,7 @@ main > .skills > article {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #CCCCCC;
+    background-color: #1f5f72;
     gap: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
@@ -236,19 +236,20 @@ main > .skills > article > div {
 main > .skills >  h2 {
     text-align: center;
     padding: 20px;
-    background: #555555;
+    background: #0a3a4b;
     color: #fff;
     border-radius: 5px;
 }
 
 main .skills > article > div {
     background-color: #fff;
+    color: #1f5f72;
     border-radius: 3px;
 }
 
 main > .skills > article > div > h3 > i {
     font-size: 40px;
-    color: #333;
+    color: #1f5f72;
 }
 
 main > .projects {
@@ -259,8 +260,8 @@ main > .projects {
 main > .projects h2 {
     text-align: center;
     padding: 20px;
-    background-color: #7cd9a2 ;
-    color: #000;
+    background-color: #1f5f72 ;
+    color: #fff;
     border-radius: 5px;
 }
 
@@ -270,7 +271,7 @@ main > .projects > article {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(143deg, #000 0%, #fff 100%);
+    background: #89a7b1;/*linear-gradient(143deg, #000 0%, #fff 100%);*/
     border-radius: 5px;
     height: 87%;
 }
@@ -278,7 +279,7 @@ main > .projects > article {
 main > .projects > article > article {
     padding: 10px;
     text-align: center;
-    background: #f6f6f6;
+    background: #fff;
     width: 80%;
     border-radius: 5px;
 }
@@ -292,8 +293,10 @@ main > .projects > article > article a {
     padding: 10px;
     margin-top: 20px;
     display: inline-block;
-    background-color: #3CB371;
+    background-color: hsl(194, 57%, 28%);
     border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
 }
 
 main > .projects > article > article a:hover {
@@ -304,7 +307,7 @@ main > .projects > article > article a:hover {
 
 footer {
     grid-area: footer;
-    background-color: #b0b0b0;
+    background-color: #fff;
     padding: 20px;
     color: #fff;
     border-radius: 5px;
@@ -315,7 +318,7 @@ footer {
 }
 
 footer > .form-container {
-    background-color: #CCCCCC;
+    background-color: #cbdad5;
     color: #000;
     padding: 15px;
     border-radius: 5px;
@@ -343,10 +346,12 @@ footer .form-container > form > div > label {
 input[type="submit"] {
     padding: 10px;
     float: right;
-    background-color: #3CB371;
+    background-color: #1f5f72;
     border-radius: 5px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: bold;
 }
 
 input[type="submit"]:hover {
@@ -367,10 +372,11 @@ footer .form-container > form > div > textarea {
 
 footer .contact-info {
     color: #000;
-    background-color: #fff;;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    font-weight: bolder;
 }
 
 footer .contact-info > h3 {

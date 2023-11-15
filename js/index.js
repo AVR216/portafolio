@@ -12,7 +12,7 @@ btnDownloadCV.addEventListener('click', () => {
 });
 
 /* Send mail from contact form */
-const contactForm = document.getElementById("contactForm");
+var contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -43,6 +43,7 @@ contactForm.addEventListener('submit', (event) => {
             Swal.fire("This web says", "An error has occurred, please contact Jhon by another means", "warning");
             /*  console.log('FAILED...', error); */
         });
+    contactForm.reset(); 
 });
 
 const labelsA = document.querySelectorAll('.btns');
